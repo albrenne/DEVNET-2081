@@ -10,6 +10,10 @@ In contrast, Retrieval-Augmented Generation (RAG) boosts performance by using ex
 
 In this workshop, you will learn how to fine-tune an LLM using PyTorch and the Hugging Face Trainer API. To evaluate if fine-tuning was effective, attendees will measure the accuracy of the LLM before and after fine-tuning. This workshop will explore writing Python code to leverage NVIDIA's GPUs to fine-tune the LLM running on Cisco’s UCS-X series hardware.
 
+## Acknowledgement
+
+This code is **heavily based on the [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter0/1?fw=pt)**, which provides excellent tutorials and educational resources for working with Transformers and fine-tuning language models using PyTorch.
+
 ## Prerequisites
 
 * Python 3.8+
@@ -47,10 +51,6 @@ The model used is `bert-base-uncased` from Hugging Face's Transformers library, 
 6. **Evaluation**
    Evaluates the fine-tuned model on the validation set to measure accuracy improvements.
 
-## Code
-
-The Python script provided includes all necessary steps to fine-tune and evaluate an LLM using Hugging Face Transformers and Datasets on NVIDIA-powered UCS-X hardware.
-
 ## Usage
 
 ```bash
@@ -58,3 +58,4 @@ python training.py
 ```
 
 > Replace `training.py` with your script filename if different.
+
